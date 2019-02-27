@@ -4,7 +4,7 @@ import AuthorCard from "./AuthorCard";
 class AuthorList extends Component {
   render() {
     let authorList = this.props.authors.map(author => (
-      <AuthorCard key={author.name} author={author} />
+      <AuthorCard key={author.first_name} author={author} />
     ));
 
     return (
